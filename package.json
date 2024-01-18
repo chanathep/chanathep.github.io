@@ -1,0 +1,21 @@
+{
+  "name": "github-cicd-demo",
+  "version": "1.0.0",
+  "description": "A simple web application for GitHub CI/CD demo",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "build": "npx webpack",
+    "start": "npx webpack serve"
+  },
+  "dependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
