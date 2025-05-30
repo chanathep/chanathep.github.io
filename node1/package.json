@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node node1/app.js & node node1/test.js && kill $!"
+    "test": "node app.js & SERVER_PID=$! ; node test.js ; kill $SERVER_PID"
   },
   "keywords": [],
   "author": "",
