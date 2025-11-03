@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "c8 jest --reporters=default --reporters=jest-junit",
+    "test": "c8 --reporter=lcov --reporter=html --reporter=text jest --reporters=default --reporters=jest-junit",
     "sonar": "node sonar-project.js"
   },
   "jest-junit": {
