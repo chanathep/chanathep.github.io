@@ -6,10 +6,14 @@ app.get('/healthcheck', (req, res) => {
   res.status(200).send('OK');
 });
 
-if (require.main === module) {
-  app.listen(port, () => {
+const startServer = () => {
+  return app.listen(port, () => {
     console.log(`API listening at http://localhost:${port}`);
   });
+};
+
+if (require.main === module) {
+  startServer();
 }
 
-module.exports = app;
+module.exports = { app, startServer };
